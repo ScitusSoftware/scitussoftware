@@ -109,7 +109,8 @@
                 toggle: false
             });
         })
-		
+        
+
     //menu for tablet/mobile,slider button, about button scrolling
     $('.mobile-menu a,.sl-btn,.ab-btn').on('click', function() {
         var $anchor = $(this);
@@ -205,6 +206,30 @@
     if (Modernizr.touch) {
         $('body').addClass('no-para');
 
+    }
+
+    $('.contact-submit-btn').on('click', function(){
+        var message = 'Name: '+$('#name').val();
+        message += '\nEmail:'+$('#email').val();
+        message += '\nPhone:'+$('#phone').val();
+        message += '\nMessage:'+$('#message').val();
+
+        $.ajax({
+            url: "https://formspree.io/kbaker@scitusengineering.com", 
+            method: "POST",
+            data: {message: message},
+            dataType: "json"
+        });
+        clearContactForm();
+    });
+    var clearContactForm = function() {
+        $('#name').val('');
+        $('#email').val('');
+        $('#phone').val('');
+        $('#message').val('');
+        $('#contact-submit-btn').hide();
+        // $('#contact-thank-you').show();
+        $('#contact-thank-you').css({display:'block'});
     }
 
 })(jQuery);
