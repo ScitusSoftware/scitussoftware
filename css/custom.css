@@ -1,0 +1,22 @@
+/* Custom Logo */
+.logo {
+	float: left;
+	text-align: left;
+	width: 20%;
+}
+.logo1 {
+	display: block;
+}
+.logo2 {
+	display: none;
+}
+.shrink .logo1 {
+	display: none;
+}
+.shrink .logo2 {
+	display: block;
+}
+.logo img {
+    max-height: 43px;
+    margin: 3px;
+}
