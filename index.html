@@ -512,8 +512,8 @@
 												 </label> 
 												 </p>
 												 <p> 
-												 <input type="text" name="phone" id="phone" placeholder="Your Telephone ...">
-												 <label for="phone" id="phoneLb"><span class="error">*Telephone Field Required</span></label>
+												 <input type="text" name="phone" id="phone" placeholder="Your Phone ...">
+												 <label for="phone" id="phoneLb"><span class="error">*Pphone Field Required</span></label>
 												 </p>
 												 <p class="textarea">
 												 <textarea name="message" id="message" placeholder="Your Message ..." rows="4"></textarea>
@@ -522,7 +522,8 @@
 												 <div class="clearfix"></div>
 												<input type="hidden" name="_next" value="http://scitus.io">
 												<input type="hidden" name="_subject" value="Scitus Software Contact Form">
-												<input type="submit" value="Send">
+												<input type="button" id="contact-submit-btn" class="contact-submit-btn" value="Send">
+												<span style="display:none" id="contact-thank-you">Thank you!</span>
 
 											 </form>
 
