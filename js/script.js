@@ -10,6 +10,7 @@
         //google map load
         $('#map_canvas').gmap({
             'center': '42.3570037,-71.0597768,17', // 42.3570037,-71.0597768,17z
+            'key': 'AIzaSyDs8a2ldC6cMqX91RMoJlBHXFXzVG-wmM4',
             'zoom': 15,
             scrollwheel: false,
             'disableDefaultUI': false,
