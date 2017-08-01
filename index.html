@@ -501,16 +501,14 @@
 										 <div id="ErrResults"><!-- retrive Error Here --></div>
 										 <div id="MainResult"><!-- retrive response Here --></div>
 										 <div id="MainContent">
-											 <form id="MyContactForm" name="MyContactForm" method="post">
+											 <form id="MyContactForm" name="MyContactForm" method="post" action="https://formspree.io/kbaker@scitusengineering.com">
 												 <p class="name">
 												 <input type="text" name="name" id="name" placeholder="Your Name ...">
 												 <label for="name" id="nameLb"><span class="error">*Name Field Required</span></label>
 												 </p>
 												 <p>
-												 <input type="email" name="email" id="email" placeholder="Your Email ...">
+												 <input type="email" name="_replyto" id="email" placeholder="Your Email ...">
 												 <label for="email" id="emailLb">
-												 <span class="error error1">*Email Field Required</span> 
-												 <span class="error error2">*Email Not Valid</span>
 												 </label> 
 												 </p>
 												 <p> 
@@ -522,8 +520,13 @@
 												 <label for="message" id="messageLb"><span class="error">*Message Field Required</span></label>
 												 </p>
 												 <div class="clearfix"></div>
-												 <a href="#" class="contact-btn">Send Message</a>
+												<input type="hidden" name="_next" value="http://scitus.io">
+												<input type="hidden" name="_subject" value="Scitus Software Contact Form">
+												<input type="submit" value="Send">
+
 											 </form>
+
+
 										 </div><!--MainContent-->
 									 </div><!--form-inner-->
 								</div><!--form-wrapper-->
