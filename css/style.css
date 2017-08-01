@@ -864,8 +864,29 @@ a.pp_previous,a.pp_next{
 .services-list {
     padding-bottom: 80px;
 }
-/*-----------------------------PRICING TABLE SECTION----------------------------------*/
-#pricing-table .top-content{padding-top:80px;}
+
+
+/*-----------------------------TECHNOLOGY SECTION----------------------------------*/
+#technology .small-title i {
+    background: #2b292a none repeat scroll 0 0;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 25px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    width: 45px;
+}
+
+#technology h4 {
+    font-size: 18px;
+	color: gray;
+	text-transform: uppercase; 
+}
+
+
+/*-----------------------------INDUSTRY TABLE SECTION----------------------------------*/
+#industry-table .top-content{padding-top:80px;}
 .p-table {
     background: #ffffff none repeat scroll 0 0;
     margin: auto;
